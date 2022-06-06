@@ -1,2 +1,2 @@
 # chrisatkeson.github.io
-Christopher Timothy Atkeson Personal Site
+[Chris T Atkeson Personal Site](https://chrisatkeson.github.io/)
