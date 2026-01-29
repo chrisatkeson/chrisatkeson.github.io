@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Christopher Timothy Atkeson </title>
+    <title>Christopher Timothy Atkeson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128115100-1"></script>
     <script>
@@ -13,141 +14,287 @@
     </script>
 
     <script type="text/javascript" src="./static/js/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 </head>
 
 <style>
-    h1, h2{
-        margin-bottom:0px;
+    * {
+        box-sizing: border-box;
     }
-    .container{
-        margin:30px;
+
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: #f5f7fa;
+        color: #3d4852;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
     }
+
+    h1 {
+        color: #2d3748;
+        font-weight: 600;
+        margin-bottom: 8px;
+        font-size: 2rem;
+    }
+
+    h2 {
+        color: #4a5568;
+        font-weight: 500;
+        margin-bottom: 12px;
+        margin-top: 0;
+        font-size: 1.25rem;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 8px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 24px;
+    }
+
+    .profile-header {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 32px;
+        flex-wrap: wrap;
+    }
+
+    .profile-header img {
+        border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+        background: #ffffff;
+        border-radius: 8px;
+        padding: 24px;
+        margin-bottom: 20px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+
+    .section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section li {
+        padding: 8px 0;
+        border-bottom: 1px solid #edf2f7;
+    }
+
+    .section li:last-child {
+        border-bottom: none;
+    }
+
+    strong {
+        color: #4a5568;
+    }
+
+    .career-item {
+        padding: 16px 0;
+        border-bottom: 1px solid #edf2f7;
+    }
+
+    .career-item:last-child {
+        border-bottom: none;
+    }
+
+    .career-title {
+        font-weight: 600;
+        color: #2d3748;
+        font-size: 1rem;
+    }
+
+    .career-desc {
+        color: #606f7b;
+        margin: 8px 0 0 0;
+        font-size: 0.95rem;
+    }
+
     .header {
-        padding: 5px;
+        padding: 10px 14px;
         cursor: pointer;
-        font-weight: bold;
-        font-size:20px;
+        font-weight: 500;
+        font-size: 1rem;
+        color: #2d3748;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.2s;
+        background: #f7f9fb;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        margin: 4px 0;
     }
-    i {
-        border: solid black;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
-        margin-bottom:2px;
-        margin-left:4px;
+
+    .header:hover {
+        background: #edf2f7;
+        border-color: #cbd5e0;
     }
+
+    .toggle-icon {
+        font-weight: 500;
+        color: #718096;
+        font-size: 1rem;
+        user-select: none;
+        width: 18px;
+        text-align: center;
+    }
+
     .content {
         visibility: hidden;
+        color: #606f7b;
+        padding: 12px 14px 4px 14px;
+        margin-top: 4px;
+        background: #fafbfc;
+        border-radius: 6px;
     }
-    .down {
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
+
+    .content p {
+        margin: 8px 0;
+        font-size: 0.95rem;
+    }
+
+    .content img {
+        border-radius: 6px;
+        max-width: 100%;
+        height: auto;
+        margin: 12px 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .content hr {
+        display: block;
+        border: none;
+        border-top: 1px solid #e2e8f0;
+        margin: 16px 0;
+    }
+
+    a {
+        color: #5a7a9a;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    a:hover {
+        color: #3d5a80;
+        text-decoration: underline;
+    }
+
+    .project-link {
+        font-weight: 500;
+    }
+
+    .project-desc {
+        color: #606f7b;
+        margin: 8px 0 16px 0;
+        font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+        .profile-header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px 16px;
+        }
     }
 </style>
 
 <body>
 <div class="container">
-    <h1> Chris Atkeson </h1>
-    <hr>
-    <img src ="images/prof_pic.jpg" HEIGHT="200" WIDTH="200" BORDER="0" style="margin-top: 10px"/>
-
-    <h2> About </h2>
-    <hr>
-    <ul>
-        <li> <strong> Occupation: </strong> Software Engineer (Badger Meter)</li>
-        <li> <strong> Education: </strong> BA in Applied Mathematics, UC Berkeley 2017</li>
-        <li> <strong> Interests: </strong> Software Engineering, Music, Chess, Game Development </li>
-    </ul>
-    <h2> Work </h2>
-    <hr>
-    <ul>
-        <strong> Delta Investment Management (2014 - 2015) </strong>
-        <div style="margin-left: 20px; margin-top:-10px;">
-            <p> My first job was at Delta Investment Management working under my dad and his business partner.  I wrote
-                Excel VBA programs to retrieve historical stock data for securities and backtest strategies.
-            </p>
+    <div class="profile-header">
+        <img src="images/prof_pic.jpg" height="150" width="150" alt="Chris Atkeson"/>
+        <div>
+            <h1>Chris Atkeson</h1>
+            <p style="margin: 0; color: #718096;">Software Engineer</p>
         </div>
-        <strong> Southern Glazers Wine and Spirits (Sep 2017 - Dec 2018) </strong>
-        <div style="margin-left: 20px; margin-top:-10px;">
-            <p> My first job after graduating was working as a data analyst at Southern Glazer's Wine and Spirits.  I
-                made reports using SQL and VBA and wrote python/VBA scripts to automate things.
-            </p>
-        </div>
-        <strong> Badger Meter (Dec 2018 - Current) </strong>
-        <div style="margin-left: 20px; margin-top:-10px;">
-            <p> I have been working for Badger Meter since December 2018. I am currently a Senior Software Engineer.
-                I work on back end development in Python and DevOps in AWS.
-            </p>
-        </div>
-    </ul>
-    <h2> Projects </h2>
-    <hr>
-    <ul>
-        <li> <a href="https://cman6397.github.io/Deploy-React-Chess/" target="_blank"> Chess Game (2018) </a>
-            <p style="margin-left: 20px; margin-top:10px;">
-                I made this chess game when I was learning to code. The AI probably plays around 1200 strength, but it
-                occasionally will find some tricky moves.
-            </p>
-    </ul>
+    </div>
 
-    <h2> Hobbies </h2>
-    <hr>
-    <ul>
-        <li>
-            <div class="header"> <span> Chess <i class="arrow down"></i> </span> </div>
-            <div class = "content">
-                <p> I began playing chess on chess.com in 2014 and have been playing regularly since.  I started
-                    playing tournament chess in 2019 and became a National Master in 2025.
-                </p>
-                <p>
-                    <a href="https://www.chess.com/member/catkeson"> Feel free to add me on chess.com </a>.
-                </p>
-                <hr>
+    <div class="section">
+        <h2>About</h2>
+        <ul>
+            <li><strong>Occupation:</strong> Software Engineer</li>
+            <li><strong>Education:</strong> BA in Applied Mathematics, UC Berkeley 2017</li>
+        </ul>
+    </div>
 
-            </div>
-        </li>
-        <li>
-            <div class="header"> <span> Game Development <i class="arrow down"></i> </span> </div>
-            <div class = "content">
-                <p> I have spent some time in Unity learning game development.  I have also spent some time working in
-                    Blender doing 3d modeling.
-                </p>
-                <p>
-                    The below images are of a modular build system.  I made the 3d components using blender and free
-                    textures.  The geometry is modeled after lincoln logs.  The components have connectors
-                    on them that allow them to connect with other components.  In the game the components can be used
-                    like legos to make structures.
-                </p>
-                <img src ="images/components.png" HEIGHT="400" WIDTH="650" BORDER="0" style="margin:5px;"/>
-                <img src ="images/cabin_two.png" HEIGHT="400" WIDTH="650" BORDER="0" style="margin:5px;"/>
-            </div>
-        </li>
-        <li>
-            <div class="header"> <span> Music <i class="arrow down"></i> </span> </div>
-            <div class = "content">
-                <p> I have played piano since I was young. I used to play pieces but now like to cover songs.  I really
-                like covering Passion Pit and Elliott Smith songs.  </p>
-                <div class = "center_block" >
-                    <iframe src="https://www.youtube.com/embed/e8xpUJc1088"> </iframe>
-                    <iframe src="https://www.youtube.com/embed/naHG_ynophY"> </iframe>
-                    <iframe src="https://www.youtube.com/embed/RlObNho3Smw"> </iframe>
+    <div class="section">
+        <h2>Career</h2>
+        <div class="career-item">
+            <div class="career-title">Badger Meter (Dec 2018 - Nov 2025)</div>
+            <p class="career-desc">I worked for Badger Meter as a Software Engineer from December 2018 to November 2025. I spent my time building services to run on cloud infrastructure (AWS).</p>
+        </div>
+        <div class="career-item">
+            <div class="career-title">Southern Glazers Wine and Spirits (Sep 2017 - Dec 2018)</div>
+            <p class="career-desc">I started my career working as a data analyst at Southern Glazer's Wine and Spirits. I made reports using SQL and VBA and wrote python/VBA scripts to automate operational tasks.</p>
+        </div>
+        <div class="career-item">
+            <div class="career-title">Delta Investment Management (2014 - 2015)</div>
+            <p class="career-desc">My first job was an internship at Delta Investment Management working under my dad and his business partner. I wrote Excel VBA programs to automate spreadsheets and backtest strategies.</p>
+        </div>
+        <div class="career-item">
+            <div class="career-title">Bay Area Chess</div>
+            <p class="career-desc">I've worked off and on for Bay Area Chess giving chess lessons to kids in after school programs.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Personal</h2>
+        <ul>
+            <li>
+                <div class="header"><span>Chess <span class="toggle-icon">+</span></span></div>
+                <div class="content">
+                    <p>I began playing chess on chess.com in 2014 and have been playing regularly since. I started around a 600 rating (50th percentile) and reached a peak rating of 2612 (99.98th percentile). I started playing tournament chess in 2020 and became a National Master in 2025.</p>
+                    <p><a href="https://www.chess.com/member/catkeson">You can find me on chess.com</a>.</p>
+                    <p>I made this chess bot in 2018 when I was learning to code. The AI plays around 1200 strength. Everything is written from scratch using JavaScript and React. </p> 
+                    <p><a href="https://cman6397.github.io/Deploy-React-Chess/" target="_blank">Click here to play</a> | <a href="https://github.com/cman6397/React-Chess" target="_blank">View on GitHub</a></p>
                 </div>
-                <hr>
-            </div>
-        </li>
-    </ul>
-
+            </li>
+            <li>
+                <div class="header"><span>Game Development <span class="toggle-icon">+</span></span></div>
+                <div class="content">
+                    <p>I have enjoyed working in Unity learning game development. I have had a couple projects over the years and I'd love to find time to make a game some day. Below is one of the projects I worked on for a build system.</p>
+                    <p>The below images are of a modular build system. I made the 3D components using Blender and free textures. The geometry is modeled after Lincoln Logs. The components have connectors on them that allow them to connect with other components. In the game the components can be used like Legos to make structures. The system is designed to be adaptable. New meshes can easily be added to the system by adding connector components.</p>
+                    <img src="images/components.png" alt="Build system components"/>
+                    <img src="images/cabin_two.png" alt="Cabin built with the system"/>
+                </div>
+            </li>
+            <li>
+                <div class="header"><span>AI Assisted Development <span class="toggle-icon">+</span></span></div>
+                <div class="content">
+                    <p>Recently I've been spending a lot of time doing AI assisted development with Claude from Anthropic. The power of AI assisted coding has blown me away and I'm excited to take on some bigger projects in the near future.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
 </body>
-<Script>
+<script>
     $(".content").slideToggle(0)
     $(".header").click(function () {
         $header = $(this);
         $content = $header.next();
+        $icon = $header.find(".toggle-icon");
         $content.css("visibility", "visible");
-        $content.slideToggle(400);
+        $content.slideToggle(400, function() {
+            if ($content.is(":visible")) {
+                $icon.text("-");
+            } else {
+                $icon.text("+");
+            }
+        });
     });
-</Script>
+</script>
 
 </html>
