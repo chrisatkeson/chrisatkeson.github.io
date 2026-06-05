@@ -200,6 +200,24 @@
         font-size: 0.95rem;
     }
 
+    .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 560px;
+        aspect-ratio: 16 / 9;
+        margin: 12px 0;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        border-radius: 6px;
+    }
+
     @media (max-width: 600px) {
         .profile-header {
             flex-direction: column;
@@ -382,15 +400,12 @@
                 <div class="header"><span>Game Development <span class="toggle-icon">+</span></span></div>
                 <div class="content">
                     <p>I have enjoyed working in Unity learning game development. I have worked on a couple projects over the years and I'd love to make a game some day. 
-                        Below is one of the projects I worked on for a build system.
+                        Below is one of the projects I worked on for a build system.  It shows the build system as well as a locomotive I built in Blender.
                     </p>
                     <div class="video-container">
                         <iframe
-                            width="560"
-                            height="315"
                             src="https://www.youtube.com/embed/j4CFOXFX-Ms"
                             title="Unity Build System Demo"
-                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin"
                             allowfullscreen>
