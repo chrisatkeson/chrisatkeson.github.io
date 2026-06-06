@@ -149,6 +149,20 @@
         text-align: center;
     }
 
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+    }
+
+    .dates {
+        color: #718096;
+        font-size: 0.85rem;
+        font-weight: 400;
+        white-space: nowrap;
+    }
+
     .content {
         visibility: hidden;
         color: #606f7b;
@@ -268,38 +282,53 @@
 
     <div class="section">
         <h2>Career</h2>
-        <div class="header"><span>Badger Meter (Dec 2018 - Nov 2025) - Senior Software Engineer <span class="toggle-icon">+</span></span></div>
+        <div class="header">
+            <span>Badger Meter — Senior Software Engineer</span>
+            <span class="header-right"><span class="dates">Dec 2018 – Nov 2025</span><span class="toggle-icon">+</span></span>
+        </div>
         <div class="content">
             <p class="career-desc">
-                At Badger Meter, I worked on large scale software systems used to process and analyze data from millions of IoT 
-                devices. I designed and built distributed applications, including scalable data pipelines, search and query APIs, and 
-                real time event detection systems. As the lead engineer on the analytics team, I managed several projects and trained
-                new engineers.  
+                I worked on large-scale software systems used to process and analyze data from millions of IoT devices. I 
+                designed and built distributed applications, including scalable data pipelines, search and query APIs, and real-time event 
+                detection systems. I led the analytics team, managing multiple projects and mentoring new engineers. 
             </p>
         </div>
-        <div class="header"><span>Southern Glazers Wine and Spirits (Sep 2017 - Dec 2018) - Data Analyst <span class="toggle-icon">+</span></span></div>
+        <div class="header">
+            <span>Southern Glazers Wine and Spirits — Data Analyst</span>
+            <span class="header-right"><span class="dates">Sep 2017 – Dec 2018</span><span class="toggle-icon">+</span></span>
+        </div>
         <div class="content">
             <p class="career-desc">
                 My first job out of college was a data analyst role at Southern Glazer's Wine and Spirits.  I built VBA applications, SQL 
                 data integrations, and wrote python scripts for business workflows.  
             </p>
         </div>
-        <div class="header"><span>Delta Investment Management (2014 - 2015) <span class="toggle-icon">+</span></span></div>
+        <div class="header">
+            <span>Delta Investment Management — Intern</span>
+            <span class="header-right"><span class="dates">2014 – 2015</span><span class="toggle-icon">+</span></span>
+        </div>
         <div class="content">
             <p class="career-desc">
                 My first job was an internship at Delta Investment Management, a registered investment advisor. I gained exposure to 
                 programming and built data retrieval, trading strategy backtesting, and performance metric calculations using VBA.
             </p>
         </div>
-        <div class="header"><span>Bay Area Chess <span class="toggle-icon">+</span></span></div>
+        <div class="header">
+            <span>Bay Area Chess — Chess Coach</span>
+            <span class="toggle-icon">+</span>
+        </div>
         <div class="content">
             <p class="career-desc">
-                I've worked a couple semesters teaching chess lessons in after school programs for elementary school children.  
+                I've worked a couple of semesters teaching chess lessons in after school programs for elementary school children.
+            </p>
         </div>
     </div>
     <div class="section">
         <h2>Personal</h2>
-        <div class="header"><span>Chess <span class="toggle-icon">+</span></span></div>
+        <div class="header">
+            <span>Chess</span>
+            <span class="toggle-icon">+</span>
+        </div>
         <div class="content">
                     <p>
                         I started playing chess online in college.  In 2020 I started playing tournament chess and achieved the National Master
@@ -311,7 +340,10 @@
                         - <a href="https://cman6397.github.io/Deploy-React-Chess/" target="_blank">Chess Bot Javascript Project - 2019</a>
                     </p>
                 </div>
-        <div class="header"><span>Game Development <span class="toggle-icon">+</span></span></div>
+        <div class="header">
+            <span>Game Development</span>
+            <span class="toggle-icon">+</span>
+        </div>
         <div class="content">
                     <p>I enjoy working in the Unity game engine on projects.  One day I hope to make a game. 
                         Below is a sample scene featuring a build system, snow shader, and locomotive model 
@@ -327,7 +359,10 @@
                         </iframe>
                     </div>
                 </div>
-        <div class="header"><span>AI Assisted Development <span class="toggle-icon">+</span></span></div>
+        <div class="header">
+            <span>AI Assisted Development</span>
+            <span class="toggle-icon">+</span>
+        </div>
         <div class="content">
                     <p>Recently I've been spending some time doing AI-assisted development using Claude Code. I'm excited to see what I can build.  </p>
                 </div>
