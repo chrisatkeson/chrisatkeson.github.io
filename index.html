@@ -253,20 +253,23 @@
         <div class="header"><span>Badger Meter (Dec 2018 - Nov 2025) <span class="toggle-icon">+</span></span></div>
         <div class="content">
             <p class="career-desc">
-                In September of 2018, my friend Kiarash Mavandad, who I met at Berkeley, told me about an opening at his company for a software engineering role. 
-                He was a Computer Science major with programming internships in college and a couple years of software experience under his belt. As an Applied Math major with
-                no tech experience I felt unqualified for such a role, but the prospect of working reduced hours for double pay while acquiring valuable skills was appealing.
-                Programming had been my favorite part of all the previous jobs I had so it felt like a great fit.  Kiarash campaigned on my behalf, trying to convince them to
-                give me a shot, and managed to get me an interview. I knew nothing about software engineering and scrambled to cover a list of topics he sent me before my 
-                interview in a couple days.
+                In September of 2018, my friend Kiarash Mavandad, who I had met at Berkeley, told me about an opening at his company 
+                for a software engineering role. He was a Computer Science major with programming internships in college and a couple 
+                of years of software experience under his belt. As an Applied Math major with no professional tech experience, I felt 
+                unqualified for such a role, but the prospect of working fewer hours for double the pay while acquiring valuable skills 
+                was appealing. Not to mention, programming had been my favorite part of all my previous jobs.  Kiarash campaigned on 
+                my behalf, trying to convince them to give me a chance, and managed to get me an interview. I knew almost nothing about 
+                software engineering and spent the next few days scrambling to learn some basics.
             
                 <br><br>
             
-                I went into the interview and it didn't go well.  I found myself answering "no" to almost every software-related question they asked. The interview was 
-                brief, as it was clear I didn't have what they were looking for, but for final questions I made a plea.  I said I really enjoyed programming and I would 
-                work for reduced pay if they gave me a chance. Unfortunately I was rejected, but the head manager, Shahram Javey, appreciated my passion 
-                and reached out with some advice on what to learn. I took notes and began working on projects every day after work with the goal of switching to 
-                software engineering.
+                I went into the interview, and it didn't go well. I found myself answering "no" to almost every software related 
+                question they asked. The interview was brief, as it quickly became clear that I didn't have the experience they 
+                were looking for. When they asked if I had any final questions, I made one last plea. I told them how much I enjoyed 
+                programming and that I could work for reduced pay if they were willing to give me a chance. Unfortunately I was 
+                rejected. However, the head manager, Shahram Javey, appreciated my enthusiasm and reached out afterward with 
+                advice on what I should learn. I took notes and began working on projects every day after work with the goal 
+                of transitioning into software engineering.
             
                 <br><br>
             
@@ -277,73 +280,79 @@
             
                 <br><br>
             
-                I went in for the new job and it was clear I had a long way to go. The other engineers would say things to me using technical jargon that I 
-                didn't understand, and I would take down pages of notes to review later. I worked long hours, struggling to wrap my head around the dozens of technologies 
-                and hundreds of technical terms I needed to know. My manager would call me in and show me complex DSL queries written against an Elasticsearch 
-                cluster, and I watched quietly wondering how I could ever make sense of any of it.  
+                About one month later, Shahram called unexpectedly to check in. I excitedly told him about the projects I had been working on; I had built a 
+                chess engine in JavaScript from scratch and a CRM using Python and React. He wanted to see the code, and after reviewing the projects, he called 
+                back to say the team wanted to re-interview me.  I was delighted. I went in for my second interview, and after showing marked improvement, 
+                they offered me a three-month contract. I couldn't have been happier.
 
                 <br><br>
-                I did what I could to piece together some understanding, and when I was assigned my first feature I poured over the code base trying as 
-                hard as I could to grasp it. For almost a month I worked late every day. I poured over thousands of lines of code and integrated the feature. 
-                When everything seemed to be working, I tentatively submitted my code for review, expecting it to be shredded. To my surprise, a senior engineer 
-                left a glowing review, and even encouraged my manager to extend my contract to full time. I made it!
+                I did what I could to piece together an understanding, and when I was assigned my first feature, I pored over the code base, trying as hard 
+                as I could to grasp it. For almost a month, I worked late every day. I pored over thousands of lines of code and eventually integrated the 
+                feature.  When everything seemed to be working, I tentatively submitted my code for review, expecting it to be shredded. To my surprise, a 
+                senior engineer left a glowing review and encouraged my manager to extend my contract to full time.  I made it!
             
                 <br><br>
             
-                For the next couple years, I continued to build my skill set and take on larger projects. The gaps in my understanding were growing fewer and 
-                further between, and higher ups began to trust me with greater responsibility. I became one of only a few administrators on our cloud 
-                infrastructure platform and was permitted to build services and design my own systems independtly. I took control of our Elasticsearch cluster to 
-                implement cost saving strategies and became proficient enough at the query DSL to become the leading resource on Elasticsearch. I was 
-                promoted to Senior Software Engineer and now frequently managed other engineers and consulted other teams.
+                For the next couple of years, I continued to build my skill set and take on larger projects. The gaps in my understanding grew fewer and 
+                farther between, and management began to trust me with greater responsibility. I became one of only a few administrators on our cloud 
+                infrastructure platform and was given the freedom to build services and design systems independently.  I took control of our Elasticsearch 
+                cluster, implementing cost-saving strategies and becoming proficient enough with the query DSL to become the division's leading resource 
+                on Elasticsearch. I was promoted to Senior Software Engineer and frequently found myself managing other engineers and consulting 
+                with other teams on projects.
 
                 <br><br>
 
-                My primary work centered around processing, analyzing, and storing data received from more than ten million IoT devices broadcasting
-                minutely sensor readings. I developed parallelized solutions that could scale to thousands of concurrent workers to ingest, normalize, 
-                and store this data in Elasticsearch clusters.  I built APIs that provided data access through a custom JSON-based query language 
-                capable of being translated into SQL queries, Elasticsearch DSL, and in-memory filtering against Python dataclasses. The language 
+                My primary work centered around processing, analyzing, and storing data received from more than ten million IoT devices transmitting 
+                minutely sensor readings. I developed parallelized systems capable of scaling to thousands of concurrent workers to ingest, normalize, 
+                and store this data in Elasticsearch clusters. I worked on APIs that provided data access through a custom JSON-based query language 
+                capable of being translated into SQL queries, Elasticsearch DSL, and in memory filtering against Python dataclasses. The language 
                 was built around three core components: a field, an operator, and a value. It proved flexible enough to support everything from 
-                simple text matching to geospatial polygon filtering and was adopted across almost all APIs.  Another major initiative was the 
-                development of a rules engine API, which allowed utility customers to define data filters that could be applied to incoming 
-                sensor streams to generate notifications and detect issues in near real time. The feature was highly successful and became a major 
-                selling point of our software.  I wrote thousands of automated tests to protect the functionality of these systems and regularly 
+                simple text matching to geospatial polygon filtering and was eventually adopted across nearly all of our APIs.  Another major 
+                initiative was the development of a rules engine that allowed customers to define filters against incoming sensor streams to 
+                generate notifications and detect issues in near real time. The feature was highly successful and became a major selling 
+                point of the platform.  I wrote thousands of automated tests to protect the functionality of these systems and regularly 
                 led test driven development training sessions for the engineering team. 
 
                 <br><br>
             
-                I greatly enjoyed the freedom of my role and loved working under Shahram, the manager who had encouraged me from the start. I later found 
-                out that he had been the only one who wanted to hire me after my first interview.  A PhD Computer Scientist and Iranian immigrant with a long tenure 
-                at Adobe,  he had founded a startup utilizing cellular devices to broadcast water meter data to cloud servers, which was acquired by Badger Meter. 
-                Through the acquisition, he retained his role as head of software and kept an office in Los Gatos, far from the corporate headquarters in Milwaukee.  
-                He valued creativity and had a true love of programming.  He cared deeply about the fulfillment and well being of his employees, shouldering 
-                corporate responsibility and advocating for promotions on behalf of his engineers. He had a great sense of humor and was kind and forgiving.  He 
-                believed in people and wanted to give everyone a chance.  When the building janitor came up and asked if his son could have a summer internship, Shahram 
-                didn't hesistate, "Asbsolutley", he said.  The janitors son ended up being a fantastic dev ops engineer.  Though in his mid sixties, Shahram was 
-                constantly reading up on the latest tech material and would excitedly call us in to demo something new. I look up to him as a role model and 
-                will forever be grateful for what he did for me. 
+                I greatly enjoyed the freedom of my role and loved working under Shahram, the manager who had encouraged me from the start. 
+                I later found out that he had been the only person who wanted to hire me after my first interview.  A PhD computer scientist 
+                and Iranian immigrant with a long tenure at Adobe, he had founded a startup that used cellular devices to transmit water meter 
+                data to cloud servers, which was later acquired by Badger Meter. Through the acquisition, he retained his role as head of 
+                software and kept an office in Los Gatos, far from the corporate headquarters in Milwaukee.  He valued creativity and had 
+                a genuine love of programming. He cared deeply about the fulfillment and well-being of his employees, shouldering corporate 
+                responsibilities and advocating for promotions on behalf of his engineers. He had a great sense of humor and was kind 
+                and forgiving. Most importantly, he believed in people and wanted to give everyone a chance.  One day, the building 
+                janitor approached him and asked whether his son could have a summer internship. Shahram didn't hesitate. 
+                "Absolutely," he said. The janitor's son went on to become an excellent DevOps engineer.  Though he was in his 
+                mid-sixties, Shahram was constantly reading about the latest technologies and would excitedly call us into his 
+                office to demonstrate something new he had discovered. I look up to him as a role model and will forever be 
+                grateful for what he did for me.
             
                 <br><br>
             
-                In 2024 I went to Milwaukee for a work assignment and unfortunately got re-orged to a newly formed team. Our company had recently 
-                acquired several other IoT technology companies and wanted to embark on a project to unify all the software. They pulled our best front end engineer 
-                onto the team and put me in charge of backend development. The project was bold and half-baked. I would receive hundred-page PDFs of APIs that 
-                had to be incorporated and GitHub repositories with vastly different backend stacks. The design was incomplete, and the vision for the app was 
-                always changing. My new manager had only been at the company a year and was caught between engineers pushing back on the feasibility of the project 
-                and executives pressuring him to get it done.
+                In 2024, I went to Milwaukee for a work assignment and was unfortunately re-orged to a newly formed team. Our company 
+                had recently acquired several other IoT technology companies and wanted to embark on a project to unify all of the software. 
+                They pulled our best front-end engineer onto the team and put me in charge of backend development.  The project was bold 
+                and half-baked. I was handed hundred-page API specifications that had to be incorporated, along with GitHub repositories 
+                built on vastly different technology stacks. The design was incomplete, and the vision for the application was 
+                constantly changing. My new manager had only been at the company for a year and was caught between engineers 
+                pushing back on the feasibility of the project and executives pressuring him to get it done.
 
                 <br><br>
 
-                I deliberated burning the midnight oil to attempt to get the project done, but I didn't believe in the path we were on and knew any effort 
-                would be Herculean. At age 30, I didn't have the same energy I had at 25, and I had to weigh whether or not it was worth it.  There were plenty 
-                of more important things I thought I could be doing, and I hoped I could persuade my manager to let me work on something else.  I explained 
-                my concerns to my manager and asked if I could be moved to a different team, but ultimately was told the project was top priority. A couple 
-                months later I put in my notice.
-            
+                I deliberated burning the midnight oil, but I didn't believe in the path we were on and knew the effort required would 
+                be Herculean.  There were more important things I felt I could be working on, and I hoped I could 
+                persuade my manager to let me switch projects.  I explained my concerns to my manager and asked if I could be moved to 
+                a different team, but ultimately I was told the project was the company's top priority. A couple of months later, 
+                I put in my notice.
+
                 <br><br>
             
-                My time at Badger was a fantastic experience, and I am incredibly grateful. I learned so much and loved my time in San Jose, Campbell, and Los Gatos.  The office
-                was right below the Santa Cruz Mountains, and there was nothing like a sunset mountain bike ride followed by a stop at the brewery on a friday night after work.  I remain in 
-                touch with many former coworkers, including Shahram and Kiarash, and may even return some day.
+                My time at Badger was a fantastic experience, and I am incredibly grateful. I learned so much and loved my time in 
+                San Jose, Campbell, and Los Gatos. I remain in touch with many former coworkers, including Shahram, and 
+                may return someday.
+
             </p>
         </div>
         <div class="header"><span>Southern Glazers Wine and Spirits (Sep 2017 - Dec 2018) <span class="toggle-icon">+</span></span></div>
