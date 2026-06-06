@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
     <title>Chris T. Atkeson</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -15,8 +16,6 @@
 
     <script type="text/javascript" src="./static/js/jquery-3.3.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-</head>
 
 <style>
     * {
@@ -247,6 +246,7 @@
         }
     }
 </style>
+</head>
 
 <body>
 <div class="container">
@@ -271,142 +271,33 @@
         <div class="header"><span>Badger Meter (Dec 2018 - Nov 2025) <span class="toggle-icon">+</span></span></div>
         <div class="content">
             <p class="career-desc">
-                In September of 2018, my friend Kiarash Mavandad, who I had met at Berkeley, told me about an opening at his company 
-                for a software engineering role. He was a Computer Science major with programming internships in college and a couple 
-                of years of software experience under his belt. As an Applied Math major with no professional tech experience, I felt 
-                unqualified for such a role, but the prospect of working fewer hours for double the pay while acquiring valuable skills 
-                was appealing. Not to mention, programming had been my favorite part of all my previous jobs.  Kiarash campaigned on 
-                my behalf, trying to convince them to give me a chance, and managed to get me an interview. I knew almost nothing about 
-                software engineering and spent the next few days scrambling to learn some basics.
-            
-                <br><br>
-            
-                I went into the interview, and it didn't go well. I found myself answering "no" to almost every software related 
-                question they asked. The interview was brief, as it quickly became clear that I didn't have the experience they 
-                were looking for. When they asked if I had any final questions, I made one last plea. I told them how much I enjoyed 
-                programming and that I could work for reduced pay if they were willing to give me a chance. Unfortunately I was 
-                rejected. However, the head manager, Shahram Javey, appreciated my enthusiasm and reached out afterward with 
-                advice on what I should learn. I took notes and began working on projects every day after work with the goal 
-                of transitioning into software engineering.
-            
-                <br><br>
-            
-                About one month later, Shahram made a surprising call to check in. I excitedly told him about the projects I had been working on; I had built 
-                a chess engine in JavaScript from scratch and a CRM with Python and React. He wanted to see the code, and after reviewing the projects, he called 
-                back to say the team wanted to re-interview me. I was delighted. I went in for my second interview, and after showing marked improvement, they 
-                offered me a three month contract. I couldn't have been happier.
-            
-                <br><br>
-            
-                I went in for the new job and it was clear I had a long way to go. The other engineers would say things to me using technical jargon that I 
-                didn't understand, and I would take down pages of notes to review later. I worked long hours, struggling to wrap my head around the dozens of technologies 
-                and hundreds of technical terms I needed to know. My manager would call me in and show me complex DSL queries written against an Elasticsearch 
-                cluster, and I watched quietly wondering how I could ever make sense of any of it.  
-
-                <br><br>
-                I did what I could to piece together an understanding, and when I was assigned my first feature, I dove into the code base, trying as hard as I 
-                could to grasp it. For almost a month, I worked late every day. I pored over thousands of lines of code and eventually integrated the feature.  When 
-                everything seemed to be working, I tentatively submitted my code for review, expecting it to be shredded. To my surprise, a senior engineer left 
-                a glowing review and encouraged my manager to offer me a full-time position.  I made it!
-            
-                <br><br>
-            
-                For the next couple of years, I continued to build my skill set and take on larger projects. The gaps in my understanding grew fewer and 
-                farther between, and management began to trust me with greater responsibility. I became one of only a few administrators on our cloud 
-                infrastructure platform and was given the freedom to build services and design systems independently.  I took control of our Elasticsearch 
-                cluster, implementing cost-saving strategies and becoming proficient enough with the query DSL to become the division's leading resource 
-                on Elasticsearch. I was promoted to Senior Software Engineer and frequently found myself managing other engineers and consulting 
-                with other teams on projects.
-
-                <br><br>
-
-                My primary work centered around processing, analyzing, and storing data received from more than ten million IoT devices transmitting 
-                minutely sensor readings. I developed parallelized systems capable of scaling to thousands of concurrent workers to ingest, normalize, 
-                and store this data in Elasticsearch clusters. I worked on APIs that provided data access through a custom JSON-based query language 
-                capable of being translated into SQL queries, Elasticsearch DSL, and in memory filtering against Python dataclasses. The language 
-                was built around three core components: a field, an operator, and a value. It proved flexible enough to support everything from 
-                simple text matching to geospatial polygon filtering and was eventually adopted across nearly all of our APIs.  Another major 
-                initiative was the development of a rules engine that allowed customers to define filters against incoming sensor streams to 
-                generate notifications and detect issues in near real time. The feature was highly successful and became a major selling 
-                point of the platform.  I wrote thousands of automated tests to protect the functionality of these systems and regularly 
-                led test driven development training sessions for the engineering team. 
-
-                <br><br>
-            
-                I greatly enjoyed the freedom of my role and loved working under Shahram, the manager who had encouraged me from the start. 
-                I later found out that he had been the only person who wanted to hire me after my first interview.  A PhD computer scientist 
-                and Iranian immigrant with a long tenure at Adobe, he had founded a startup that used cellular devices to transmit water meter 
-                data to cloud servers, which was later acquired by Badger Meter. Through the acquisition, he retained his role as head of 
-                software and kept an office in Los Gatos, far from the corporate headquarters in Milwaukee.  He valued creativity and had 
-                a genuine love of programming. He cared deeply about the fulfillment and well-being of his employees, shouldering corporate 
-                responsibilities and advocating for promotions on behalf of his engineers. He had a great sense of humor and was kind 
-                and forgiving. Most importantly, he believed in people and wanted to give everyone a chance.  One day, the building 
-                janitor approached him and asked whether his son could have a summer internship. Shahram didn't hesitate. 
-                "Absolutely," he said. The janitor's son went on to become an excellent DevOps engineer.  Though he was in his 
-                mid-sixties, Shahram was constantly reading about the latest technologies and would excitedly call us into his 
-                office to demonstrate something new he had discovered. I look up to him as a role model and will forever be 
-                grateful for what he did for me.
-            
-                <br><br>
-            
-                In 2024, I went to Milwaukee for a work assignment and was unfortunately re-orged to a newly formed team. Our company 
-                had recently acquired several other IoT technology companies and wanted to embark on a project to unify all of the software. 
-                They pulled our best front-end engineer onto the team and put me in charge of backend development.  The project was bold 
-                and half-baked. I was handed hundred-page API specifications that had to be incorporated, along with GitHub repositories 
-                built on vastly different technology stacks. The design was incomplete, and the vision for the application was 
-                constantly changing. My new manager had only been at the company for a year and was caught between engineers 
-                pushing back on the feasibility of the project and executives pressuring him to get it done.
-
-                <br><br>
-
-                I deliberated burning the midnight oil, but I didn't believe in the path we were on and knew the effort required would 
-                be Herculean.  There were more important things I felt I could be working on, and I hoped I could 
-                persuade my manager to let me switch projects.  I explained my concerns to my manager and asked if I could be moved to 
-                a different team, but ultimately I was told the project was the company's top priority. A couple of months later, 
-                I put in my notice.
-
-                <br><br>
-            
-                My time at Badger was a fantastic experience, and I am incredibly grateful. I learned so much and loved my time in 
-                San Jose, Campbell, and Los Gatos. I remain in touch with many former coworkers, including Shahram, and 
-                may return someday.
-
+                I worked for seven years as a software engineer at Badger Meter.  I started as an intern and worked my way 
+                up to senior engineer.  I designed and built distributed systems that processed sensor data from millions 
+                of IoT devices. My work included scalable data pipelines, search and query APIs, and real time event 
+                detection systems.  
             </p>
         </div>
         <div class="header"><span>Southern Glazers Wine and Spirits (Sep 2017 - Dec 2018) <span class="toggle-icon">+</span></span></div>
         <div class="content">
             <p class="career-desc">
-                
-                I got my first full time job as a data analyst at Southern Glazer's Wine and Spirits. Although I had an 
-                Applied Mathematics degree, what ultimately got me the role was my experience with VBA. A programmer had 
-                recently left the company, and they needed someone to maintain and support the VBA applications he had built.
-                Many of these applications relied on data from an Oracle SQL database, and I soon began learning how to 
-                write queries to support reporting and operational workflows. I found that I enjoyed working 
-                with SQL and became quite proficient at querying. I automated reports, built data feeds, and incorporated 
-                Python scripts into business processes.  Before long, I realized that what I enjoyed most wasn't the data 
-                analysis, but the programming around it.
-
+                My first job out of college was a data analyst role at Southern Glazer's Wine and Spirits.  I built VBA applications, SQL 
+                data integrations, and wrote python scripts for business workflows.  
             </p>
         </div>
         <div class="header"><span>Delta Investment Management (2014 - 2015) <span class="toggle-icon">+</span></span></div>
         <div class="content">
             <p class="career-desc">
-                My first job was an internship at Delta Investment Management, a registered investment advisor. It was there 
-                that I was first exposed to programming through a VBA macro used to simulate a trading strategy. I was 
-                tasked with making modifications to the program and, through a combination of experimentation and googling, gradually 
-                began to understand the code. Over time, I expanded and automated the system, adding functionality for 
-                data retrieval, trading strategy backtesting, performance metric calculations, and a variety of other 
-                operational tasks for the firm.  I continued to support the occasional feature request for years after 
-                leaving the internship.  
+                My first job was an internship at Delta Investment Management, a registered investment advisor. I gained exposure to 
+                programming and built data retrieval, trading strategy backtesting, performance metric calculations, and other automations 
+                using VBA.
             </p>
         </div>
         <div class="header"><span>Bay Area Chess <span class="toggle-icon">+</span></span></div>
         <div class="content">
             <p class="career-desc">
-                I've worked a couple stints for Bay Area Chess teaching chess lessons in after school programs. Most 
-                of the classes I taught were made up of elementary school students who were new to the game.  The work
-                was rewarding and I enjoyed teaching, but managing large classes of young children proved to be far 
-                more taxing than any other job I had held.
+                I've worked a couple of stints for Bay Area Chess teaching chess lessons in after school programs. Most 
+                of the classes I taught were made up of elementary school students.  The work was rewarding, but managing 
+                large classes of young children was far more taxing than any other job I had held.
             </p>
         </div>
     </div>
@@ -415,70 +306,20 @@
         <div class="header"><span>Chess <span class="toggle-icon">+</span></span></div>
         <div class="content">
                     <p>
-                        I began playing chess online on chess.com in 2014 while in college. I started around a 600 rating (beginner level) but progressed 
-                        quickly. By mid 2015 I reached a rating of 2000 (advanced level).  By the time I graduated I was a skilled speed chess player with 
-                        a 2200 online rating.
-
-                        <br><br>
-                        
-                        In late 2019, I started a new job as a software engineer and ended up moving less than a mile from the Kolty Chess Club in 
-                        Campbell. I began playing in weekly tournaments to establish an official rating, with the dream of one day earning the 
-                        National Master title. The challenge was daunting, and I wasn't sure I could do it. To earn the title, I would need to 
-                        reach a US Chess rating of 2200, higher than 99% of tournament players. The appeal was a lifelong title and the opportunity 
-                        to compete in prize money events against other masters, including some of the strongest players in the world.  For years, I 
-                        had viewed the title as little more than a pipe dream, but now there was a real path to get there. 
-
-                        <br><br>
-
-                        I signed up for the club, and things started off pretty well. After a couple of tournaments, my established US Chess rating 
-                        was 2006, still nearly 200 points short of the goal, but close enough to make it feel attainable.  A two year COVID 
-                        closure put a hold on things, but in 2022 I was back at the club playing weekly games.  My rating climbed to the upper 
-                        2000s, and in 2023 I crossed 2150 and won the club championship. In 2024 I began venturing to the Mechanics Institute in 
-                        San Francisco to face better opposition.  The top players in SF were all masters, and it was tough adjusting 
-                        to the level of play. 
-                        
-                        <br><br>
-                        The pursuit of the title was stressful. As my rating climbed, the risk reward balance became increasingly unforgiving. A win 
-                        might earn me two rating points, while a draw could cost ten and a loss twenty. A single bad game could erase months of progress.
-                        My results were volatile as I bounced between 2150 and 2190, never quite reaching the threshold.  In one tournament I was within 
-                        6 points of the title, only to draw a critical game and fall back down.  It felt like I couldn't break through and I was beginning 
-                        to question if I would ever make it.  There were plenty of horror stories of players reaching 2190+ peaks, only to fall back down
-                        and never regain the level. I figured I had only so many chances before I would run out of time.  
-
-                        <br><br>
-                        
-                        On one occasion, I was completely lost and only moments away from a twenty point hit, enough to erase weeks of progress. By 
-                        that point, I had been taking the train into San Francisco every Tuesday night for months, spending an hour and a half each 
-                        way commuting, riding my bike to the club, and not getting home until well past midnight with work waiting for me in the morning.
-                        As I stared at the dismal position, I questioned why I was putting myself through this and what else I could have been doing 
-                        with my time. My stomach dropped as I watched my opponent reach for what was certain to be the game ending move. By some 
-                        miracle, he missed it.  When I walked out of the playing hall, I was drenched in sweat, pale, and nauseous. The game had 
-                        literally made me sick.
-
-                        <br><br>
-
-                        I finally got the break I needed in early 2025, when two strong tournament performances and a win against a young master 
-                        propelled me to a rating of 2200. I was officially a National Master. It was a great feeling to get the title, but it was
-                        more of a relief than anything else that I had made it through the gauntlet.   
-
-                        <br><br>
-
-                        Through the remainder of 2025 and 2026, I continued to play chess, mostly online speed games. I had fun pushing for new 
-                        highs and briefly crossed 2600, which may very well end up being my all time high. I participated in a handful of 
-                        prize money events and enjoyed playing against strong masters, but tournament schedules usually coincide with 
-                        work hours, and I haven't been able to participate much recently. I still love playing, especially speed chess, and 
-                        expect I'll always play in some capacity. That's more or less the end of my chess story, though if something ever 
-                        happens that buys me a lot of free time, I might come back with a vengeance!
-
-                        <hr>
-                            - <a href="https://www.chess.com/member/catkeson">Add me on Chess.com </a><br>
-                            - <a href="https://cman6397.github.io/Deploy-React-Chess/" target="_blank">Chess Bot Javascript Project - 2019</a>
+                        I started playing chess online in college.  In 2020 I started playing tournament chess and achieved the National Master
+                        title in 2025.
+                    </p>
+                    <hr>
+                    <p>
+                        - <a href="https://www.chess.com/member/catkeson">Add me on Chess.com</a><br>
+                        - <a href="https://cman6397.github.io/Deploy-React-Chess/" target="_blank">Chess Bot Javascript Project - 2019</a>
                     </p>
                 </div>
         <div class="header"><span>Game Development <span class="toggle-icon">+</span></span></div>
         <div class="content">
-                    <p>I have enjoyed working in Unity learning game development. I have worked on a couple projects over the years and I'd love to make a game some day. 
-                        Below is one of the projects I worked on for a build system.  It shows the build system as well as a locomotive I built in Blender.
+                    <p>I enjoy working in the Unity game engine on projects.  I'd love to make a game some day. 
+                        Below is a sample scene featuring a build system, snow shader, and locomotive model 
+                        created with Blender.  
                     </p>
                     <div class="video-container">
                         <iframe
@@ -489,19 +330,13 @@
                             allowfullscreen>
                         </iframe>
                     </div>
-                    <p>
-                        I made the 3D components using Blender and free textures. The geometry is modeled after Lincoln Logs. The components have connectors on them 
-                        that allow them to snap to other components. In the game the components can be used like Legos to make 
-                        structures. The system is designed to be adaptable. New meshes can easily be added to the system by adding 
-                        connector components and defining valid connections through a map.</p>
                 </div>
         <div class="header"><span>AI Assisted Development <span class="toggle-icon">+</span></span></div>
         <div class="content">
-                    <p>Recently I've been spending some time doing AI assisted development using Claude code. I'm excited to see what I can build with it so hopefully I'll have more to add here.</p>
+                    <p>Recently I've been spending some time doing AI-assisted development using Claude Code. I'm excited to see what I can build.  </p>
                 </div>
     </div>
 </div>
-</body>
 <script>
     $(".content").slideToggle(0)
     $(".header").click(function () {
@@ -518,5 +353,6 @@
         });
     });
 </script>
+</body>
 
 </html>
